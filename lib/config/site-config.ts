@@ -10,30 +10,12 @@ export interface SiteConfig {
 }
 
 /**
- * Get site configuration from environment variables
- * Falls back to default values if not set
+ * Site configuration object
+ * Uses environment variables with fallback to default values
+ * Note: NEXT_PUBLIC_ environment variables are statically embedded at build time
  */
-export function getSiteConfig(): SiteConfig {
-  return {
-    title: process.env.NEXT_PUBLIC_SITE_TITLE || "KVideo - 视频聚合平台",
-    description: process.env.NEXT_PUBLIC_SITE_DESCRIPTION || "Multi-source video aggregation platform with beautiful Liquid Glass UI",
-    name: process.env.NEXT_PUBLIC_SITE_NAME || "KVideo",
-  };
-}
-
-/**
- * Get individual configuration values
- */
-export const siteConfig = {
-  get title() {
-    return process.env.NEXT_PUBLIC_SITE_TITLE || "KVideo - 视频聚合平台";
-  },
-
-  get description() {
-    return process.env.NEXT_PUBLIC_SITE_DESCRIPTION || "Multi-source video aggregation platform with beautiful Liquid Glass UI";
-  },
-
-  get name() {
-    return process.env.NEXT_PUBLIC_SITE_NAME || "KVideo";
-  },
+export const siteConfig: SiteConfig = {
+  title: process.env.NEXT_PUBLIC_SITE_TITLE || "KVideo - 视频聚合平台",
+  description: process.env.NEXT_PUBLIC_SITE_DESCRIPTION || "Multi-source video aggregation platform with beautiful Liquid Glass UI",
+  name: process.env.NEXT_PUBLIC_SITE_NAME || "KVideo",
 };
