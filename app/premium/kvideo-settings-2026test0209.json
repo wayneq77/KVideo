@@ -68,7 +68,7 @@
   { "id": "bubugao", "name": "步步高資源", "baseUrl": "https://api.yparse.com/api/json", "group": "normal", "enabled": true, "priority": 67 },
   { "id": "niuniu", "name": "牛牛點播", "baseUrl": "https://api.niuniuzy.me/api.php/provide/vod", "group": "normal", "enabled": true, "priority": 68 },
   { "id": "suoni", "name": "索尼資源", "baseUrl": "https://suoniapi.com/api.php/provide/vod", "group": "normal", "enabled": true, "priority": 69 },
-  { "id": "maotai", "name": "茅台資源", "baseUrl": "https://caiji.maotaizy.cc/api.php/provide/vod", "group": "normal", "enabled": true, "priority": 70 },
+  { "id": "maotai", "name": "茅臺資源", "baseUrl": "https://caiji.maotaizy.cc/api.php/provide/vod", "group": "normal", "enabled": true, "priority": 70 },
   { "id": "dbzy", "name": "豆瓣資源", "baseUrl": "https://dbzy.tv/api.php/provide/vod", "group": "normal", "enabled": true, "priority": 71 },
   { "id": "subo", "name": "速博資源", "baseUrl": "https://subocaiji.com/api.php/provide/vod", "group": "normal", "enabled": true, "priority": 72 },
   { "id": "jinying", "name": "金鷹點播", "baseUrl": "https://jinyingzy.com/api.php/provide/vod", "group": "normal", "enabled": true, "priority": 73 },

@@ -1,35 +1,35 @@
 # 描述 (Description)
 
-请简要描述您的更改。说明您解决的问题或添加的功能。
+請簡要描述您的更改。說明您解決的問題或添加的功能。
 
-## 关联 Issue (Related Issue)
+## 關聯 Issue (Related Issue)
 
-如果有相关的 Issue，请在这里链接 (例如: Fixes #123)。
+如果有相關的 Issue，請在這裏鏈接 (例如: Fixes #123)。
 
-## 更改类型 (Type of Change)
+## 更改類型 (Type of Change)
 
-请删除不适用的选项：
+請刪除不適用的選項：
 
-- [ ] 🐛 Bug 修复 (Bug fix)
+- [ ] 🐛 Bug 修復 (Bug fix)
 - [ ] ✨ 新功能 (New feature)
-- [ ] 📝 文档更新 (Documentation update)
-- [ ] 💄 样式/UI 更新 (Style/UI update)
-- [ ] ♻️ 代码重构 (Refactoring)
-- [ ] ⚡️ 性能优化 (Performance improvement)
+- [ ] 📝 文檔更新 (Documentation update)
+- [ ] 💄 樣式/UI 更新 (Style/UI update)
+- [ ] ♻️ 代碼重構 (Refactoring)
+- [ ] ⚡️ 性能優化 (Performance improvement)
 - [ ] 🔧 配置更改 (Configuration change)
 
-## 检查清单 (Checklist)
+## 檢查清單 (Checklist)
 
-在提交 PR 之前，请确保您已完成以下检查：
+在提交 PR 之前，請確保您已完成以下檢查：
 
-- [ ] 我已阅读并遵守 [贡献指南](../CONTRIBUTING.md)
-- [ ] 我的代码遵循项目的代码风格
-- [ ] 我已对自己更改的代码进行了自我审查
-- [ ] 我已注释了难以理解的代码部分
-- [ ] 我已更新了相应的文档 (如果适用)
-- [ ] 我的更改没有产生新的警告或错误
-- [ ] 我已测试了我的更改，确保其按预期工作
+- [ ] 我已閱讀並遵守 [貢獻指南](../CONTRIBUTING.md)
+- [ ] 我的代碼遵循項目的代碼風格
+- [ ] 我已對自己更改的代碼進行了自我審查
+- [ ] 我已註釋了難以理解的代碼部分
+- [ ] 我已更新了相應的文檔 (如果適用)
+- [ ] 我的更改沒有產生新的警告或錯誤
+- [ ] 我已測試了我的更改，確保其按預期工作
 
-## 截图/录屏 (Screenshots/Recordings)
+## 截圖/錄屏 (Screenshots/Recordings)
 
-如果您的更改涉及 UI/UX，请提供截图或录屏：
+如果您的更改涉及 UI/UX，請提供截圖或錄屏：

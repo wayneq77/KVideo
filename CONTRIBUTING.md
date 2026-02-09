@@ -1,145 +1,145 @@
-# 贡献指南 (Contributing Guide)
+# 貢獻指南 (Contributing Guide)
 
-欢迎来到 **KVideo** 项目！我们非常感谢你愿意为这个项目做出贡献。无论是修复 Bug、添加新功能、改进文档，还是提出建议，你的每一份贡献都将让这个项目变得更好。
+歡迎來到 **KVideo** 項目！我們非常感謝你願意爲這個項目做出貢獻。無論是修復 Bug、添加新功能、改進文檔，還是提出建議，你的每一份貢獻都將讓這個項目變得更好。
 
-为了确保协作顺畅、代码质量一致，请在提交贡献前仔细阅读本指南。
+爲了確保協作順暢、代碼質量一致，請在提交貢獻前仔細閱讀本指南。
 
-## 📋 目录
+## 📋 目錄
 
-- [行为准则](#行为准则)
-- [快速开始](#快速开始)
-- [开发环境设置](#开发环境设置)
-- [代码规范](#代码规范)
+- [行爲準則](#行爲準則)
+- [快速開始](#快速開始)
+- [開發環境設置](#開發環境設置)
+- [代碼規範](#代碼規範)
 - [Git 工作流程](#git-工作流程)
-- [提交规范](#提交规范)
+- [提交規範](#提交規範)
 - [Pull Request 指南](#pull-request-指南)
-- [设计系统规范](#设计系统规范)
-- [测试要求](#测试要求)
-- [常见问题](#常见问题)
+- [設計系統規範](#設計系統規範)
+- [測試要求](#測試要求)
+- [常見問題](#常見問題)
 
-## 🤝 行为准则
+## 🤝 行爲準則
 
-我们致力于构建一个开放、友好、包容的社区环境。请在参与项目时：
+我們致力於構建一個開放、友好、包容的社區環境。請在參與項目時：
 
-- ✅ 保持尊重和礼貌
-- ✅ 欢迎不同的观点和经验
-- ✅ 接受建设性的批评
-- ✅ 专注于对社区最有利的事情
-- ❌ 不要使用性别化的语言或图像
-- ❌ 不要进行人身攻击或政治攻击
-- ❌ 不要骚扰或歧视他人
+- ✅ 保持尊重和禮貌
+- ✅ 歡迎不同的觀點和經驗
+- ✅ 接受建設性的批評
+- ✅ 專注於對社區最有利的事情
+- ❌ 不要使用性別化的語言或圖像
+- ❌ 不要進行人身攻擊或政治攻擊
+- ❌ 不要騷擾或歧視他人
 
-详细的行为准则请参阅 [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md)。
+詳細的行爲準則請參閱 [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md)。
 
-## 🚀 快速开始
+## 🚀 快速開始
 
-### 我能贡献什么？
+### 我能貢獻什麼？
 
-以下是一些你可以做出贡献的方式：
+以下是一些你可以做出貢獻的方式：
 
-1. **🐛 报告 Bug**：发现了问题？请提交 Issue
+1. **🐛 報告 Bug**：發現了問題？請提交 Issue
 2. **💡 提出新功能**：有好想法？在 Discussions 或 Issues 中分享
-3. **📝 改进文档**：发现文档不清晰或有错误？帮助我们改进
-4. **🎨 优化 UI/UX**：让界面更美观、更易用
-5. **⚡ 性能优化**：让应用运行得更快
-6. **🔧 修复 Bug**：解决现有的问题
-7. **✨ 添加功能**：实现新的特性
+3. **📝 改進文檔**：發現文檔不清晰或有錯誤？幫助我們改進
+4. **🎨 優化 UI/UX**：讓界面更美觀、更易用
+5. **⚡ 性能優化**：讓應用運行得更快
+6. **🔧 修復 Bug**：解決現有的問題
+7. **✨ 添加功能**：實現新的特性
 
-### 第一次贡献？
+### 第一次貢獻？
 
-如果这是你第一次为开源项目做贡献，我们推荐：
+如果這是你第一次爲開源項目做貢獻，我們推薦：
 
-1. 浏览 [GitHub Issues](https://github.com/KuekHaoYang/KVideo/issues)
-2. 寻找标记为 `good first issue` 的问题
-3. 在 Issue 中评论，表明你想要解决这个问题
-4. 按照本指南进行开发和提交
+1. 瀏覽 [GitHub Issues](https://github.com/KuekHaoYang/KVideo/issues)
+2. 尋找標記爲 `good first issue` 的問題
+3. 在 Issue 中評論，表明你想要解決這個問題
+4. 按照本指南進行開發和提交
 
-## 🛠 开发环境设置
+## 🛠 開發環境設置
 
-### 系统要求
+### 系統要求
 
-确保你的开发环境满足以下要求：
+確保你的開發環境滿足以下要求：
 
-| 工具 | 最低版本 | 推荐版本 | 检查命令 |
+| 工具 | 最低版本 | 推薦版本 | 檢查命令 |
 |------|----------|----------|----------|
 | **Node.js** | 20.0.0 | 20.x LTS | `node --version` |
 | **npm** | 9.0.0 | 10.x | `npm --version` |
 | **Git** | 2.30.0 | 最新版本 | `git --version` |
 
-### 详细设置步骤
+### 詳細設置步驟
 
-#### 1. Fork 仓库
+#### 1. Fork 倉庫
 
-点击 GitHub 页面右上角的 "Fork" 按钮，将项目 Fork 到你的账号下。
+點擊 GitHub 頁面右上角的 "Fork" 按鈕，將項目 Fork 到你的賬號下。
 
-#### 2. 克隆仓库
+#### 2. 克隆倉庫
 
 ```bash
-# 克隆你 Fork 的仓库
+# 克隆你 Fork 的倉庫
 git clone https://github.com/YOUR_USERNAME/KVideo.git
 cd KVideo
 
-# 添加上游仓库
+# 添加上游倉庫
 git remote add upstream https://github.com/KuekHaoYang/KVideo.git
 ```
 
-#### 3. 安装依赖
+#### 3. 安裝依賴
 
 ```bash
 npm install
 ```
 
-#### 4. 启动开发服务器
+#### 4. 啓動開發服務器
 
 ```bash
 npm run dev
 ```
 
-访问 `http://localhost:3000` 查看应用。
+訪問 `http://localhost:3000` 查看應用。
 
-#### 5. 验证环境
+#### 5. 驗證環境
 
-确保以下命令都能正常运行：
+確保以下命令都能正常運行：
 
 ```bash
-# 代码检查
+# 代碼檢查
 npm run lint
 
-# 构建测试
+# 構建測試
 npm run build
 ```
 
-## 📏 代码规范
+## 📏 代碼規範
 
-### 核心规范
+### 核心規範
 
-#### 1. 文件长度限制 ⚠️
+#### 1. 文件長度限制 ⚠️
 
 > [!CAUTION]
-> **这是项目的硬性规则！所有项目文件必须保持在 150 行以内（除系统文件外）。**
+> **這是項目的硬性規則！所有項目文件必須保持在 150 行以內（除系統文件外）。**
 
-**检查命令：**
+**檢查命令：**
 
 ```bash
 find . -type f -not -path "*/node_modules/*" -not -path "*/.next/*" -not -path "*/.git/*" -not -name "package-lock.json" -not -name "*.png" -not -name "*.md" | xargs wc -l | awk '$1 > 150 && $2 != "total" {print $2 " - " $1 "行"}'
 ```
 
-**如果命令有输出，说明有文件超过 150 行，必须重构！**
+**如果命令有輸出，說明有文件超過 150 行，必須重構！**
 
-**重构策略：**
+**重構策略：**
 
-如果文件超过 150 行，请使用以下方法重构：
+如果文件超過 150 行，請使用以下方法重構：
 
-##### A. 提取组件
+##### A. 提取組件
 
-**问题：** 一个组件太长，包含太多 JSX
+**問題：** 一個組件太長，包含太多 JSX
 
-**解决方案：** 将大组件拆分为多个小组件
+**解決方案：** 將大組件拆分爲多個小組件
 
 ```typescript
-// ❌ 不好：一个 200 行的大组件
+// ❌ 不好：一個 200 行的大組件
 export function VideoPlayer() {
-  // 150+ 行代码
+  // 150+ 行代碼
   return (
     <div>
       {/* 大量 JSX */}
@@ -147,7 +147,7 @@ export function VideoPlayer() {
   );
 }
 
-// ✅ 好：拆分为多个小组件
+// ✅ 好：拆分爲多個小組件
 export function VideoPlayer() {
   return (
     <div>
@@ -158,68 +158,68 @@ export function VideoPlayer() {
   );
 }
 
-// PlayerControls.tsx (单独文件)
+// PlayerControls.tsx (單獨文件)
 export function PlayerControls() { /* ... */ }
 
-// ProgressBar.tsx (单独文件)
+// ProgressBar.tsx (單獨文件)
 export function ProgressBar() { /* ... */ }
 
-// VolumeControl.tsx (单独文件)
+// VolumeControl.tsx (單獨文件)
 export function VolumeControl() { /* ... */ }
 ```
 
-##### B. 提取自定义 Hook
+##### B. 提取自定義 Hook
 
-**问题：** 组件包含大量状态逻辑
+**問題：** 組件包含大量狀態邏輯
 
-**解决方案：** 将逻辑提取到自定义 Hook
+**解決方案：** 將邏輯提取到自定義 Hook
 
 ```typescript
-// ❌ 不好：组件内有大量状态逻辑
+// ❌ 不好：組件內有大量狀態邏輯
 export function SearchPage() {
   const [query, setQuery] = useState('');
   const [results, setResults] = useState([]);
   const [loading, setLoading] = useState(false);
-  // ... 大量逻辑
+  // ... 大量邏輯
   
   const handleSearch = async () => {
-    // ... 50+ 行逻辑
+    // ... 50+ 行邏輯
   };
   
   return <div>{/* JSX */}</div>;
 }
 
-// ✅ 好：提取到自定义 Hook
+// ✅ 好：提取到自定義 Hook
 export function SearchPage() {
   const { query, results, loading, handleSearch } = useSearch();
   return <div>{/* JSX */}</div>;
 }
 
-// useSearch.ts (单独文件)
+// useSearch.ts (單獨文件)
 export function useSearch() {
-  // ... 所有状态逻辑
+  // ... 所有狀態邏輯
   return { query, results, loading, handleSearch };
 }
 ```
 
-##### C. 提取工具函数
+##### C. 提取工具函數
 
-**问题：** 文件包含大量辅助函数
+**問題：** 文件包含大量輔助函數
 
-**解决方案：** 将工具函数移到 `lib/utils/`
+**解決方案：** 將工具函數移到 `lib/utils/`
 
 ```typescript
-// ❌ 不好：组件文件包含工具函数
+// ❌ 不好：組件文件包含工具函數
 export function VideoCard() {
   const formatDuration = (seconds: number) => {
-    // ... 格式化逻辑
+    // ... 格式化邏輯
   };
   
   const formatDate = (date: Date) => {
-    // ... 格式化逻辑
+    // ... 格式化邏輯
   };
   
-  // ... 更多工具函数
+  // ... 更多工具函數
   
   return <div>{/* JSX */}</div>;
 }
@@ -236,20 +236,20 @@ export function formatDuration(seconds: number) { /* ... */ }
 export function formatDate(date: Date) { /* ... */ }
 ```
 
-##### D. 模块化
+##### D. 模塊化
 
-**问题：** 单个文件处理多个相关功能
+**問題：** 單個文件處理多個相關功能
 
-**解决方案：** 按功能拆分文件并使用桶文件（barrel exports）
+**解決方案：** 按功能拆分文件並使用桶文件（barrel exports）
 
 ```typescript
 // ❌ 不好：player-utils.ts 包含 200 行
 export function parseHLS() { /* ... */ }
 export function handlePlayback() { /* ... */ }
 export function manageQuality() { /* ... */ }
-// ... 更多函数
+// ... 更多函數
 
-// ✅ 好：拆分为多个文件
+// ✅ 好：拆分爲多個文件
 // lib/utils/player/index.ts
 export * from './hls-parser';
 export * from './playback-manager';
@@ -265,9 +265,9 @@ export function handlePlayback() { /* ... */ }
 export function manageQuality() { /* ... */ }
 ```
 
-#### 2. TypeScript 规范
+#### 2. TypeScript 規範
 
-**类型安全**
+**類型安全**
 
 ```typescript
 // ❌ 避免使用 any
@@ -275,7 +275,7 @@ function processData(data: any) {
   return data.value;
 }
 
-// ✅ 使用具体类型
+// ✅ 使用具體類型
 interface VideoData {
   id: string;
   title: string;
@@ -286,7 +286,7 @@ function processData(data: VideoData) {
   return data.title;
 }
 
-// ✅ 或使用 unknown（需要类型检查）
+// ✅ 或使用 unknown（需要類型檢查）
 function processData(data: unknown) {
   if (typeof data === 'object' && data !== null && 'value' in data) {
     return (data as { value: string }).value;
@@ -295,40 +295,40 @@ function processData(data: unknown) {
 }
 ```
 
-**函数返回类型**
+**函數返回類型**
 
 ```typescript
-// ❌ 缺少返回类型
+// ❌ 缺少返回類型
 function calculateTotal(items) {
   return items.reduce((sum, item) => sum + item.price, 0);
 }
 
-// ✅ 明确返回类型
+// ✅ 明確返回類型
 function calculateTotal(items: Item[]): number {
   return items.reduce((sum, item) => sum + item.price, 0);
 }
 ```
 
-**接口定义**
+**接口定義**
 
 ```typescript
-// ✅ 使用 interface 定义对象类型
+// ✅ 使用 interface 定義對象類型
 interface VideoCardProps {
   video: Video;
   onPlay: (id: string) => void;
   className?: string;
 }
 
-// ✅ 使用 type 定义联合类型
+// ✅ 使用 type 定義聯合類型
 type ThemeMode = 'light' | 'dark' | 'system';
 ```
 
-#### 3. React 组件规范
+#### 3. React 組件規範
 
-**函数组件**
+**函數組件**
 
 ```typescript
-// ✅ 标准函数组件结构
+// ✅ 標準函數組件結構
 interface ButtonProps {
   variant?: 'primary' | 'secondary';
   children: React.ReactNode;
@@ -347,26 +347,26 @@ export function Button({ variant = 'primary', children, onClick }: ButtonProps) 
 }
 ```
 
-**组件文件组织**
+**組件文件組織**
 
 ```typescript
-// 1. 导入
+// 1. 導入
 import React from 'react';
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 
-// 2. 类型定义
+// 2. 類型定義
 interface ComponentProps {
   // ...
 }
 
-// 3. 组件定义
+// 3. 組件定義
 export function Component({ prop1, prop2 }: ComponentProps) {
   // 4. Hooks
   const [state, setState] = useState();
   const router = useRouter();
   
-  // 5. 事件处理函数
+  // 5. 事件處理函數
   const handleClick = () => {
     // ...
   };
@@ -378,19 +378,19 @@ export function Component({ prop1, prop2 }: ComponentProps) {
 }
 ```
 
-**单一职责原则**
+**單一職責原則**
 
 ```typescript
-// ❌ 组件做太多事情
+// ❌ 組件做太多事情
 export function VideoSection() {
-  // 获取数据
-  // 处理搜索
+  // 獲取數據
+  // 處理搜索
   // 渲染列表
-  // 处理分页
-  // 处理过滤
+  // 處理分頁
+  // 處理過濾
 }
 
-// ✅ 拆分为专注的组件
+// ✅ 拆分爲專注的組件
 export function VideoSection() {
   const videos = useVideos();
   return (
@@ -404,12 +404,12 @@ export function VideoSection() {
 }
 ```
 
-#### 4. 样式规范
+#### 4. 樣式規範
 
-**Tailwind CSS 优先**
+**Tailwind CSS 優先**
 
 ```typescript
-// ✅ 使用 Tailwind 类名
+// ✅ 使用 Tailwind 類名
 export function Card({ children }: { children: React.ReactNode }) {
   return (
     <div className="rounded-2xl glass p-6 hover:shadow-lg transition-shadow">
@@ -419,39 +419,39 @@ export function Card({ children }: { children: React.ReactNode }) {
 }
 ```
 
-**遵循 Liquid Glass 设计系统**
+**遵循 Liquid Glass 設計系統**
 
 ```typescript
-// ✅ 正确使用圆角
-<div className="rounded-2xl">  {/* 容器：大圆角 */}
-<div className="rounded-full">  {/* 小元素：完全圆形 */}
+// ✅ 正確使用圓角
+<div className="rounded-2xl">  {/* 容器：大圓角 */}
+<div className="rounded-full">  {/* 小元素：完全圓形 */}
 
-// ❌ 不要使用其他圆角值
-<div className="rounded-lg">   {/* 错误！ */}
-<div className="rounded-xl">   {/* 错误！ */}
+// ❌ 不要使用其他圓角值
+<div className="rounded-lg">   {/* 錯誤！ */}
+<div className="rounded-xl">   {/* 錯誤！ */}
 ```
 
-**响应式设计**
+**響應式設計**
 
 ```typescript
-// ✅ 移动优先的响应式设计
+// ✅ 移動優先的響應式設計
 <div className="
-  flex flex-col           {/* 移动端：垂直布局 */}
-  md:flex-row            {/* 平板及以上：水平布局 */}
-  gap-4 md:gap-6         {/* 响应式间距 */}
+  flex flex-col           {/* 移動端：垂直佈局 */}
+  md:flex-row            {/* 平板及以上：水平佈局 */}
+  gap-4 md:gap-6         {/* 響應式間距 */}
 ">
 ```
 
-#### 5. 命名规范
+#### 5. 命名規範
 
 **文件命名**
 
-- 组件文件：`PascalCase.tsx`（例如：`VideoCard.tsx`）
+- 組件文件：`PascalCase.tsx`（例如：`VideoCard.tsx`）
 - Hook 文件：`camelCase.ts`（例如：`useVideoPlayer.ts`）
 - 工具文件：`kebab-case.ts`（例如：`format-utils.ts`）
-- 类型文件：`kebab-case.ts`（例如：`video-types.ts`）
+- 類型文件：`kebab-case.ts`（例如：`video-types.ts`）
 
-**变量命名**
+**變量命名**
 
 ```typescript
 // ✅ 清晰的命名
@@ -468,12 +468,12 @@ const fn = () => {};
 **常量命名**
 
 ```typescript
-// ✅ 全大写 + 下划线
+// ✅ 全大寫 + 下劃線
 const MAX_VIDEO_DURATION = 7200;
 const API_BASE_URL = 'https://api.example.com';
 ```
 
-#### 6. 导入顺序
+#### 6. 導入順序
 
 ```typescript
 // 1. React 和 Next.js
@@ -481,17 +481,17 @@ import React from 'react';
 import { useState } from 'react';
 import Link from 'next/link';
 
-// 2. 第三方库
+// 2. 第三方庫
 import { create } from 'zustand';
 
-// 3. 项目别名导入
+// 3. 項目別名導入
 import { Button } from '@/components/ui/Button';
 import { formatDate } from '@/lib/utils/date-utils';
 
-// 4. 相对路径导入
+// 4. 相對路徑導入
 import { LocalComponent } from './LocalComponent';
 
-// 5. 类型导入
+// 5. 類型導入
 import type { Video } from '@/lib/types/video';
 ```
 
@@ -501,75 +501,75 @@ import type { Video } from '@/lib/types/video';
 
 **主分支**
 
-- `main`：稳定的生产分支，只接受 PR 合并
+- `main`：穩定的生產分支，只接受 PR 合併
 
 **功能分支命名**
 
-遵循以下命名规范：
+遵循以下命名規範：
 
-- `feat/功能名称`：新功能（例如：`feat/add-playlist`）
-- `fix/问题描述`：错误修复（例如：`fix/search-crash`）
-- `docs/文档修改`：文档更新（例如：`docs/update-readme`）
-- `refactor/重构名称`：代码重构（例如：`refactor/player-controls`）
-- `perf/优化内容`：性能优化（例如：`perf/image-loading`）
-- `style/样式修改`：样式调整（例如：`style/button-spacing`）
-- `test/测试内容`：测试相关（例如：`test/add-unit-tests`）
-- `chore/其他修改`：构建或工具变动（例如：`chore/update-deps`）
+- `feat/功能名稱`：新功能（例如：`feat/add-playlist`）
+- `fix/問題描述`：錯誤修復（例如：`fix/search-crash`）
+- `docs/文檔修改`：文檔更新（例如：`docs/update-readme`）
+- `refactor/重構名稱`：代碼重構（例如：`refactor/player-controls`）
+- `perf/優化內容`：性能優化（例如：`perf/image-loading`）
+- `style/樣式修改`：樣式調整（例如：`style/button-spacing`）
+- `test/測試內容`：測試相關（例如：`test/add-unit-tests`）
+- `chore/其他修改`：構建或工具變動（例如：`chore/update-deps`）
 
-### 开发流程
+### 開發流程
 
-#### 1. 同步上游仓库
+#### 1. 同步上游倉庫
 
-在开始新工作前，先同步最新的代码：
+在開始新工作前，先同步最新的代碼：
 
 ```bash
-# 获取上游更新
+# 獲取上游更新
 git fetch upstream
 
-# 切换到主分支
+# 切換到主分支
 git checkout main
 
-# 合并上游更新
+# 合併上游更新
 git merge upstream/main
 
 # 推送到你的 Fork
 git push origin main
 ```
 
-#### 2. 创建功能分支
+#### 2. 創建功能分支
 
 ```bash
-# 从 main 创建新分支
+# 從 main 創建新分支
 git checkout -b feat/your-feature-name
 
-# 确认当前分支
+# 確認當前分支
 git branch
 ```
 
-#### 3. 进行开发
+#### 3. 進行開發
 
-在开发过程中：
+在開發過程中：
 
-- 频繁提交小的、原子性的改动
-- 编写清晰的提交信息
-- 定期运行 `npm run lint` 检查代码
+- 頻繁提交小的、原子性的改動
+- 編寫清晰的提交信息
+- 定期運行 `npm run lint` 檢查代碼
 
-#### 4. 提交前检查
+#### 4. 提交前檢查
 
-**必须通过的检查：**
+**必須通過的檢查：**
 
 ```bash
-# 1. 代码规范检查
+# 1. 代碼規範檢查
 npm run lint
 
-# 2. 文件长度检查
+# 2. 文件長度檢查
 find . -type f -not -path "*/node_modules/*" -not -path "*/.next/*" -not -path "*/.git/*" -not -name "package-lock.json" -not -name "*.png" -not -name "*.md" | xargs wc -l | awk '$1 > 150 && $2 != "total" {print $2 " - " $1 "行"}'
 
-# 3. 构建测试
+# 3. 構建測試
 npm run build
 ```
 
-**如果任何检查失败，必须先修复！**
+**如果任何檢查失敗，必須先修復！**
 
 #### 5. 推送分支
 
@@ -578,11 +578,11 @@ npm run build
 git push origin feat/your-feature-name
 ```
 
-## 📝 提交规范
+## 📝 提交規範
 
 ### Conventional Commits
 
-我们使用 [Conventional Commits](https://www.conventionalcommits.org/) 规范：
+我們使用 [Conventional Commits](https://www.conventionalcommits.org/) 規範：
 
 ```
 <type>(<scope>): <subject>
@@ -592,44 +592,44 @@ git push origin feat/your-feature-name
 <footer>
 ```
 
-**Type 类型：**
+**Type 類型：**
 
 - `feat`：新功能
-- `fix`：错误修复
-- `docs`：文档变更
-- `style`：代码格式（不影响代码运行）
-- `refactor`：重构
-- `perf`：性能优化
-- `test`：测试相关
-- `chore`：构建过程或辅助工具的变动
+- `fix`：錯誤修復
+- `docs`：文檔變更
+- `style`：代碼格式（不影響代碼運行）
+- `refactor`：重構
+- `perf`：性能優化
+- `test`：測試相關
+- `chore`：構建過程或輔助工具的變動
 
 **示例：**
 
 ```bash
-# 简单提交
-git commit -m "feat: 添加视频播放列表功能"
+# 簡單提交
+git commit -m "feat: 添加視頻播放列表功能"
 
-# 详细提交
+# 詳細提交
 git commit -m "feat(player): 添加倍速播放功能
 
 - 支持 0.5x 到 2x 的播放速度
-- 添加速度选择器 UI
-- 保存用户的速度偏好
+- 添加速度選擇器 UI
+- 保存用戶的速度偏好
 
 Closes #123"
 ```
 
-**提交信息最佳实践：**
+**提交信息最佳實踐：**
 
 - ✅ 使用中文或英文（保持一致）
 - ✅ 使用祈使句（"添加功能" 而不是 "添加了功能"）
-- ✅ 第一行不超过 50 个字符
-- ✅ 正文每行不超过 72 个字符
-- ✅ 说明 "做了什么" 和 "为什么"，而不仅是 "怎么做"
+- ✅ 第一行不超過 50 個字符
+- ✅ 正文每行不超過 72 個字符
+- ✅ 說明 "做了什麼" 和 "爲什麼"，而不僅是 "怎麼做"
 
 ## 🔍 Pull Request 指南
 
-### 创建 PR
+### 創建 PR
 
 1. **推送分支到你的 Fork**
 
@@ -637,84 +637,84 @@ Closes #123"
 git push origin feat/your-feature-name
 ```
 
-2. **在 GitHub 上创建 PR**
+2. **在 GitHub 上創建 PR**
 
-- 访问你的 Fork 页面
-- 点击 "Compare & pull request"
-- 选择目标分支：`KuekHaoYang/KVideo:main`
+- 訪問你的 Fork 頁面
+- 點擊 "Compare & pull request"
+- 選擇目標分支：`KuekHaoYang/KVideo:main`
 
 ### PR 描述模板
 
 ```markdown
-## 📝 变更说明
+## 📝 變更說明
 
-简要描述这个 PR 做了什么。
+簡要描述這個 PR 做了什麼。
 
-## 🎯 相关 Issue
+## 🎯 相關 Issue
 
 Closes #123
 Fixes #456
 
-## 📸 截图（如果是 UI 变更）
+## 📸 截圖（如果是 UI 變更）
 
-[如果有 UI 变更，添加截图或 GIF]
+[如果有 UI 變更，添加截圖或 GIF]
 
-## ✅ 检查清单
+## ✅ 檢查清單
 
-- [ ] 代码已通过 `npm run lint`
-- [ ] 所有文件都在 150 行以内
-- [ ] 构建成功（`npm run build`）
-- [ ] 已在本地测试所有变更
-- [ ] 遵循 Liquid Glass 设计系统
-- [ ] 提交信息符合规范
-- [ ] 已更新相关文档
+- [ ] 代碼已通過 `npm run lint`
+- [ ] 所有文件都在 150 行以內
+- [ ] 構建成功（`npm run build`）
+- [ ] 已在本地測試所有變更
+- [ ] 遵循 Liquid Glass 設計系統
+- [ ] 提交信息符合規範
+- [ ] 已更新相關文檔
 
-## 🧪 测试步骤
+## 🧪 測試步驟
 
 1. 第一步
 2. 第二步
-3. 预期结果
+3. 預期結果
 
-## 📌 额外说明
+## 📌 額外說明
 
 [任何其他需要 reviewer 知道的信息]
 ```
 
-### PR 审查流程
+### PR 審查流程
 
-1. **自动检查**：GitHub Actions 会自动运行检查
-2. **代码审查**：维护者会审查你的代码
-3. **修改请求**：如果需要修改，会留下评论
-4. **批准和合并**：审查通过后会被合并
+1. **自動檢查**：GitHub Actions 會自動運行檢查
+2. **代碼審查**：維護者會審查你的代碼
+3. **修改請求**：如果需要修改，會留下評論
+4. **批准和合並**：審查通過後會被合併
 
-### 回应审查意见
+### 回應審查意見
 
 ```bash
-# 进行修改后
+# 進行修改後
 git add .
-git commit -m "refactor: 根据审查意见调整代码"
+git commit -m "refactor: 根據審查意見調整代碼"
 git push origin feat/your-feature-name
 ```
 
-PR 会自动更新。
+PR 會自動更新。
 
-## 🎨 设计系统规范
+## 🎨 設計系統規範
 
-### Liquid Glass 原则
+### Liquid Glass 原則
 
-在编写 UI 代码时，必须遵循 Liquid Glass 设计系统：
+在編寫 UI 代碼時，必須遵循 Liquid Glass 設計系統：
 
-#### 1. 圆角规范
+#### 1. 圓角規範
 
 > [!IMPORTANT]
-> **只使用两种圆角：`rounded-2xl` 和 `rounded-full`**
+> **只使用兩種圓角：`rounded-2xl` 和 `rounded-full`**
 
 ```typescript
-// ✅ 正确
-<div className="rounded-2xl">  {/* 容器、卡片、按钮、输入框 */}
-<div className="rounded-full"> {/* 头像、徽章、药丸形状 */}
+// ✅ 正確
+<div className="rounded-2xl">  {/* 容器、卡片、按鈕、輸入框 */}
+<div className="rounded-full"> {/* 頭像、徽章、藥丸形狀 */}
 
-// ❌ 错误
+// ❌ 錯誤
 <div className="rounded-lg">
 <div className="rounded-xl">
 <div className="rounded-md">
@@ -723,12 +723,12 @@ PR 会自动更新。
 #### 2. 玻璃效果
 
 ```typescript
-// ✅ 使用 glass 类或 backdrop-filter
+// ✅ 使用 glass 類或 backdrop-filter
 <div className="glass">
-  {/* 内容 */}
+  {/* 內容 */}
 </div>
 
-// 或自定义玻璃效果
+// 或自定義玻璃效果
 <div className="
   backdrop-blur-xl 
   backdrop-saturate-180 
@@ -738,10 +738,10 @@ PR 会自动更新。
 ">
 ```
 
-#### 3. 动画过渡
+#### 3. 動畫過渡
 
 ```typescript
-// ✅ 使用标准过渡曲线
+// ✅ 使用標準過渡曲線
 <button className="
   transition-all 
   duration-300 
@@ -750,116 +750,116 @@ PR 会自动更新。
 ">
 ```
 
-#### 4. 颜色系统
+#### 4. 顏色系統
 
 ```typescript
-// ✅ 使用 CSS 变量
+// ✅ 使用 CSS 變量
 <div className="bg-glass text-glass-text border-glass-border">
 
-// 或 Tailwind 的语义化颜色
+// 或 Tailwind 的語義化顏色
 <div className="bg-primary text-primary-foreground">
 ```
 
-### 组件复用
+### 組件複用
 
-优先复用 `components/ui/` 下的基础组件：
+優先複用 `components/ui/` 下的基礎組件：
 
 ```typescript
-// ✅ 好：复用基础组件
+// ✅ 好：複用基礎組件
 import { Button } from '@/components/ui/Button';
 import { Modal } from '@/components/ui/Modal';
 
 export function Feature() {
   return (
     <Modal>
-      <Button variant="primary">确定</Button>
+      <Button variant="primary">確定</Button>
     </Modal>
   );
 }
 
-// ❌ 不好：重新实现基础组件
+// ❌ 不好：重新實現基礎組件
 export function Feature() {
   return (
     <div className="modal">
-      <button className="btn">确定</button>
+      <button className="btn">確定</button>
     </div>
   );
 }
 ```
 
-## 🧪 测试要求
+## 🧪 測試要求
 
-### 手动测试
+### 手動測試
 
-在提交 PR 前，请手动测试以下内容：
+在提交 PR 前，請手動測試以下內容：
 
-#### 功能测试
+#### 功能測試
 
-- [ ] 新功能按预期工作
-- [ ] 没有破坏现有功能
-- [ ] 边界情况处理正确
+- [ ] 新功能按預期工作
+- [ ] 沒有破壞現有功能
+- [ ] 邊界情況處理正確
 
-#### 浏览器测试
+#### 瀏覽器測試
 
-在以下浏览器中测试：
+在以下瀏覽器中測試：
 
 - [ ] Chrome/Edge（最新版）
 - [ ] Firefox（最新版）
 - [ ] Safari（最新版）
 
-#### 响应式测试
+#### 響應式測試
 
-在以下设备尺寸测试：
+在以下設備尺寸測試：
 
-- [ ] 移动端（375px - 428px）
+- [ ] 移動端（375px - 428px）
 - [ ] 平板端（768px - 1024px）
 - [ ] 桌面端（1280px+）
 
-#### 无障碍测试
+#### 無障礙測試
 
-- [ ] 键盘导航正常工作
-- [ ] 焦点状态清晰可见
-- [ ] 屏幕阅读器友好
+- [ ] 鍵盤導航正常工作
+- [ ] 焦點狀態清晰可見
+- [ ] 屏幕閱讀器友好
 
-### 代码检查
+### 代碼檢查
 
 ```bash
-# 运行 ESLint
+# 運行 ESLint
 npm run lint
 
-# 检查文件长度
+# 檢查文件長度
 find . -type f -not -path "*/node_modules/*" -not -path "*/.next/*" -not -path "*/.git/*" -not -name "package-lock.json" -not -name "*.png" -not -name "*.md" | xargs wc -l | awk '$1 > 150 && $2 != "total" {print $2 " - " $1 "行"}'
 ```
 
-## ❓ 常见问题
+## ❓ 常見問題
 
-### Q1: 我应该从哪里开始？
+### Q1: 我應該從哪裏開始？
 
-**A:** 查看标记为 `good first issue` 的 Issues，这些通常比较简单，适合新手。
+**A:** 查看標記爲 `good first issue` 的 Issues，這些通常比較簡單，適合新手。
 
-### Q2: 如何让文件保持在 150 行以内？
+### Q2: 如何讓文件保持在 150 行以內？
 
-**A:** 参考 [文件长度限制](#1-文件长度限制-️) 部分的重构策略。关键是：
-- 提取组件
+**A:** 參考 [文件長度限制](#1-文件長度限制-️) 部分的重構策略。關鍵是：
+- 提取組件
 - 提取 Hook
-- 提取工具函数
-- 模块化
+- 提取工具函數
+- 模塊化
 
-注：系统文件（如 README.md、CONTRIBUTING.md 等文档）不受此限制。
-- 提取组件
+注：系統文件（如 README.md、CONTRIBUTING.md 等文檔）不受此限制。
+- 提取組件
 - 提取 Hook
-- 提取工具函数
-- 模块化
+- 提取工具函數
+- 模塊化
 
-### Q3: 我的 PR 多久会被审查？
+### Q3: 我的 PR 多久會被審查？
 
-**A:** 通常在 1-3 个工作日内。如果超过一周没有回应，可以在 PR 中添加评论提醒。
+**A:** 通常在 1-3 個工作日內。如果超過一週沒有回應，可以在 PR 中添加評論提醒。
 
-### Q4: 可以同时提交多个 PR 吗？
+### Q4: 可以同時提交多個 PR 嗎？
 
-**A:** 可以，但建议每个 PR 专注于一个功能或修复。避免在一个 PR 中做太多不相关的改动。
+**A:** 可以，但建議每個 PR 專注於一個功能或修復。避免在一個 PR 中做太多不相關的改動。
 
-### Q5: 如何解决合并冲突？
+### Q5: 如何解決合併衝突？
 
 ```bash
 # 1. 同步上游
@@ -867,68 +867,68 @@ git fetch upstream
 git checkout main
 git merge upstream/main
 
-# 2. 切换到功能分支并 rebase
+# 2. 切換到功能分支並 rebase
 git checkout feat/your-feature
 git rebase main
 
-# 3. 解决冲突后
+# 3. 解決衝突後
 git add .
 git rebase --continue
 
-# 4. 强制推送（因为 rebase 改变了历史）
+# 4. 強制推送（因爲 rebase 改變了歷史）
 git push origin feat/your-feature --force
 ```
 
-### Q6: 我的提交信息写错了怎么办？
+### Q6: 我的提交信息寫錯了怎麼辦？
 
 ```bash
-# 修改最后一次提交
+# 修改最後一次提交
 git commit --amend -m "新的提交信息"
 
-# 如果已经推送了
+# 如果已經推送了
 git push origin feat/your-feature --force
 ```
 
-### Q7: 如何测试我的改动？
+### Q7: 如何測試我的改動？
 
-1. 启动开发服务器：`npm run dev`
-2. 在浏览器中手动测试功能
-3. 测试不同的设备尺寸
-4. 运行 `npm run build` 确保生产构建成功
+1. 啓動開發服務器：`npm run dev`
+2. 在瀏覽器中手動測試功能
+3. 測試不同的設備尺寸
+4. 運行 `npm run build` 確保生產構建成功
 
-### Q8: Liquid Glass 设计系统在哪里定义？
+### Q8: Liquid Glass 設計系統在哪裏定義？
 
-在 `app/styles/glass.css` 文件中。所有组件都应该基于这个设计系统。
+在 `app/styles/glass.css` 文件中。所有組件都應該基於這個設計系統。
 
-### Q9: 我需要更新文档吗？
+### Q9: 我需要更新文檔嗎？
 
-如果你的 PR 包含以下内容，请更新相应文档：
+如果你的 PR 包含以下內容，請更新相應文檔：
 
 - 新功能：更新 README.md
-- API 变化：更新相关注释和文档
-- 配置变化：更新配置说明
+- API 變化：更新相關注釋和文檔
+- 配置變化：更新配置說明
 
-### Q10: 如何报告安全漏洞？
+### Q10: 如何報告安全漏洞？
 
-请查看 [SECURITY.md](SECURITY.md) 了解安全漏洞报告流程。不要在公开 Issue 中讨论安全问题。
+請查看 [SECURITY.md](SECURITY.md) 瞭解安全漏洞報告流程。不要在公開 Issue 中討論安全問題。
 
-## 📞 需要帮助？
+## 📞 需要幫助？
 
-如果你有任何问题：
+如果你有任何問題：
 
-1. **查看文档**：README.md 和本指南
-2. **搜索 Issues**：可能已经有人问过相同的问题
-3. **提出问题**：在 Discussions 或 Issues 中提问
-4. **联系维护者**：[@KuekHaoYang](https://github.com/KuekHaoYang)
+1. **查看文檔**：README.md 和本指南
+2. **搜索 Issues**：可能已經有人問過相同的問題
+3. **提出問題**：在 Discussions 或 Issues 中提問
+4. **聯繫維護者**：[@KuekHaoYang](https://github.com/KuekHaoYang)
 
-## 🎉 感谢你的贡献！
+## 🎉 感謝你的貢獻！
 
-感谢你花时间阅读本指南，并为 KVideo 做出贡献。每一个贡献，无论大小，都让这个项目变得更好。
+感謝你花時間閱讀本指南，併爲 KVideo 做出貢獻。每一個貢獻，無論大小，都讓這個項目變得更好。
 
-我们期待看到你的 Pull Request！
+我們期待看到你的 Pull Request！
 
 ---
 
 <div align="center">
-  <strong>让我们一起打造更好的 KVideo！</strong>
+  <strong>讓我們一起打造更好的 KVideo！</strong>
 </div>
