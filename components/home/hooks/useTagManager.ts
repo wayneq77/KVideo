@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { DragEndEvent } from '@dnd-kit/core';
 import { arrayMove } from '@dnd-kit/sortable';
 
-const DEFAULT_TAG = { id: 'popular', label: '热门', value: '热门' };
+const DEFAULT_TAG = { id: 'popular', label: '熱門', value: '熱門' };
 
 const STORAGE_KEY_PREFIX = 'kvideo_custom_tags_';
 
@@ -37,13 +37,13 @@ export function useTagManager() {
                 const data = await response.json();
                 if (data.tags && Array.isArray(data.tags)) {
                     const mappedTags = data.tags.map((label: string) => ({
-                        id: label === '热门' ? 'popular' : `tag_${label}`,
+                        id: label === '熱門' ? 'popular' : `tag_${label}`,
                         label,
                         value: label,
                     }));
 
-                    // If "热门" isn't in the list, add it to the front
-                    if (!mappedTags.some((t: any) => t.value === '热门')) {
+                    // If "熱門" isn't in the list, add it to the front
+                    if (!mappedTags.some((t: any) => t.value === '熱門')) {
                         mappedTags.unshift(DEFAULT_TAG);
                     }
 
@@ -98,11 +98,11 @@ export function useTagManager() {
             const data = await response.json();
             if (data.tags && Array.isArray(data.tags)) {
                 const mappedTags = data.tags.map((label: string) => ({
-                    id: label === '热门' ? 'popular' : `tag_${label}`,
+                    id: label === '熱門' ? 'popular' : `tag_${label}`,
                     label,
                     value: label,
                 }));
-                if (!mappedTags.some((t: any) => t.value === '热门')) {
+                if (!mappedTags.some((t: any) => t.value === '熱門')) {
                     mappedTags.unshift(DEFAULT_TAG);
                 }
                 setTags(mappedTags);

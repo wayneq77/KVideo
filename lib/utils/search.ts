@@ -137,7 +137,7 @@ export function calculateRelevanceScore(item: VideoItem, query: string): number 
     if (remarks.includes('hd') || remarks.includes('1080') || remarks.includes('4k')) {
       score += 5;
     }
-    if (remarks.includes('完结') || remarks.includes('全集')) {
+    if (remarks.includes('完結') || remarks.includes('全集')) {
       score += 3;
     }
   }

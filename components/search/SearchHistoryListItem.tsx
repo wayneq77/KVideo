@@ -42,7 +42,7 @@ export function SearchHistoryListItem({
                 </span>
                 {item.resultCount !== undefined && (
                     <span className="text-xs text-[var(--text-color-secondary)] flex-shrink-0">
-                        {item.resultCount} 个结果
+                        {item.resultCount} 個結果
                     </span>
                 )}
             </div>
@@ -54,7 +54,7 @@ export function SearchHistoryListItem({
                     onRemoveItem(item.query);
                 }}
                 className="search-history-remove"
-                aria-label={`删除 "${item.query}"`}
+                aria-label={`刪除 "${item.query}"`}
                 tabIndex={0}
             >
                 <Icons.X size={14} />

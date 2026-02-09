@@ -62,7 +62,7 @@ export function VideoMetadata({ videoData, source, title }: VideoMetadataProps) 
           )}
           {videoData?.vod_director && (
             <p className="text-xs sm:text-sm text-[var(--text-tertiary)] mt-1">
-              <span className="font-semibold">导演：</span>
+              <span className="font-semibold">導演：</span>
               {videoData.vod_director}
             </p>
           )}

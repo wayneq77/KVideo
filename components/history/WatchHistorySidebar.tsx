@@ -1,6 +1,6 @@
 /**
  * Watch History Sidebar Component
- * 观看历史侧边栏组件 - Main layout and state management
+ * 觀看歷史側邊欄組件 - Main layout and state management
  */
 
 'use client';
@@ -85,7 +85,7 @@ export function WatchHistorySidebar({ isPremium = false }: { isPremium?: boolean
       <button
         onClick={() => setIsOpen(true)}
         className="fixed right-6 top-1/2 -translate-y-1/2 z-40 bg-[var(--glass-bg)] backdrop-blur-[8px] saturate-[120%] border border-[var(--glass-border)] rounded-[var(--radius-2xl)] shadow-[var(--shadow-md)] p-3 hover:scale-105 transition-transform duration-200 cursor-pointer"
-        aria-label="打开观看历史"
+        aria-label="打開觀看歷史"
       >
         <Icons.History size={24} className="text-[var(--text-color)]" />
       </button>
@@ -126,15 +126,15 @@ export function WatchHistorySidebar({ isPremium = false }: { isPremium?: boolean
       {/* Confirm Dialog */}
       <ConfirmDialog
         isOpen={deleteConfirm.isOpen}
-        title={deleteConfirm.isClearAll ? '清空历史记录' : '删除历史记录'}
+        title={deleteConfirm.isClearAll ? '清空歷史記錄' : '刪除歷史記錄'}
         message={
           deleteConfirm.isClearAll
-            ? '确定要清空所有观看历史吗？此操作无法撤销。'
-            : '确定要删除这条历史记录吗？'
+            ? '確定要清空所有觀看歷史嗎？此操作無法撤銷。'
+            : '確定要刪除這條歷史記錄嗎？'
         }
         onConfirm={confirmDelete}
         onCancel={cancelDelete}
-        confirmText="删除"
+        confirmText="刪除"
         cancelText="取消"
         variant="danger"
       />

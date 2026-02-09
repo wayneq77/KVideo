@@ -81,7 +81,7 @@ export function VideoPlayer({
 
   // Get video metadata from URL params
   const source = searchParams.get('source') || '';
-  const title = searchParams.get('title') || '未知视频';
+  const title = searchParams.get('title') || '未知視頻';
 
   // Get saved progress for this video
   const getSavedProgress = () => {
@@ -203,7 +203,7 @@ export function VideoPlayer({
             ? 'bg-orange-500/80 text-white'
             : 'bg-green-500/80 text-white'
             }`}>
-            {useProxy ? '代理模式' : '直连模式'}
+            {useProxy ? '代理模式' : '直連模式'}
           </span>
         </div>
       )}

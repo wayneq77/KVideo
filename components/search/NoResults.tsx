@@ -16,13 +16,13 @@ export function NoResults({ onReset }: NoResultsProps) {
         <Icons.Search size={64} className="text-[var(--text-color-secondary)]" />
       </div>
       <h3 className="text-3xl font-bold text-[var(--text-color)] mb-4">
-        未找到相关内容
+        未找到相關內容
       </h3>
       <p className="text-lg text-[var(--text-color-secondary)] mb-6">
-        试试其他关键词或检查拼写
+        試試其他關鍵詞或檢查拼寫
       </p>
       <Button variant="primary" onClick={onReset}>
-        返回首页
+        返回首頁
       </Button>
     </div>
   );

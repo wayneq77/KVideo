@@ -34,8 +34,8 @@ export function DesktopRightControls({
                     <button
                         onClick={onTogglePictureInPicture}
                         className="btn-icon"
-                        aria-label="画中画"
-                        title="画中画"
+                        aria-label="畫中畫"
+                        title="畫中畫"
                     >
                         <Icons.PictureInPicture size={20} />
                     </button>

@@ -60,13 +60,13 @@ export function SourceSettings({
     return (
         <div className="bg-[var(--glass-bg)] border border-[var(--glass-border)] rounded-[var(--radius-2xl)] shadow-[var(--shadow-sm)] p-6 mb-6">
             <div className="flex items-center justify-between mb-4">
-                <h2 className="text-xl font-semibold text-[var(--text-color)]">视频源管理</h2>
+                <h2 className="text-xl font-semibold text-[var(--text-color)]">視頻源管理</h2>
                 <div className="flex gap-2">
                     <button
                         onClick={onRestoreDefaults}
                         className="px-4 py-2 rounded-[var(--radius-2xl)] bg-[var(--glass-bg)] border border-[var(--glass-border)] text-[var(--text-color)] text-sm font-medium hover:bg-[color-mix(in_srgb,var(--accent-color)_10%,transparent)] transition-all duration-200 cursor-pointer"
                     >
-                        恢复默认
+                        恢復默認
                     </button>
                     <button
                         onClick={onAddSource}
@@ -77,7 +77,7 @@ export function SourceSettings({
                 </div>
             </div>
             <p className="text-sm text-[var(--text-color-secondary)] mb-6">
-                管理视频来源，调整优先级和启用状态
+                管理視頻來源，調整優先級和啓用狀態
             </p>
 
             {/* Search Bar */}
@@ -112,7 +112,7 @@ export function SourceSettings({
                     onClick={() => setShowAllSources(!showAllSources)}
                     className="w-full mt-4 px-4 py-3 rounded-[var(--radius-2xl)] bg-[var(--glass-bg)] border border-[var(--glass-border)] text-[var(--text-color)] text-sm font-medium hover:bg-[color-mix(in_srgb,var(--accent-color)_10%,transparent)] transition-all duration-200 cursor-pointer"
                 >
-                    {showAllSources ? '收起' : `显示全部 (${sources.length})`}
+                    {showAllSources ? '收起' : `顯示全部 (${sources.length})`}
                 </button>
             )}
         </div>

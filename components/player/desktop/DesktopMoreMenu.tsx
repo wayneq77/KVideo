@@ -55,10 +55,10 @@ export function DesktopMoreMenu({
     const [isAdFilterOpen, setAdFilterOpen] = React.useState(false);
 
     const AD_FILTER_LABELS: Record<string, string> = {
-        off: '关闭',
-        keyword: '关键词',
+        off: '關閉',
+        keyword: '關鍵詞',
         heuristic: '智能(Beta)',
-        aggressive: '激进'
+        aggressive: '激進'
     };
 
     const [isFullscreen, setIsFullscreen] = React.useState(false);
@@ -250,14 +250,14 @@ export function DesktopMoreMenu({
                         className={`w-full ${isRotated ? 'px-2 py-1.5 text-[11px]' : 'px-3 py-2 sm:px-4 sm:py-2.5 text-xs sm:text-sm'} text-left text-[var(--text-color)] hover:bg-[color-mix(in_srgb,var(--accent-color)_15%,transparent)] rounded-[var(--radius-2xl)] transition-colors flex items-center gap-2 group-hover:gap-3 cursor-pointer`}
                     >
                         <Icons.Link size={isRotated ? 14 : 16} className="sm:w-[18px] sm:h-[18px]" />
-                        <span>复制原链接</span>
+                        <span>複製原鏈接</span>
                     </button>
                     <button
                         onClick={() => onCopyLink('proxy')}
                         className={`w-full ${isRotated ? 'px-2 py-1.5 text-[11px]' : 'px-3 py-2 sm:px-4 sm:py-2.5 text-xs sm:text-sm'} text-left text-[var(--text-color)] hover:bg-[color-mix(in_srgb,var(--accent-color)_15%,transparent)] rounded-[var(--radius-2xl)] transition-colors flex items-center gap-2 mt-0.5 cursor-pointer`}
                     >
                         <Icons.Link size={isRotated ? 14 : 16} className="sm:w-[18px] sm:h-[18px]" />
-                        <span>复制代理链接</span>
+                        <span>複製代理鏈接</span>
                     </button>
                 </>
             ) : (
@@ -266,7 +266,7 @@ export function DesktopMoreMenu({
                     className={`w-full ${isRotated ? 'px-2 py-1.5 text-[11px]' : 'px-3 py-2 sm:px-4 sm:py-2.5 text-xs sm:text-sm'} text-left text-[var(--text-color)] hover:bg-[color-mix(in_srgb,var(--accent-color)_15%,transparent)] rounded-[var(--radius-2xl)] transition-colors flex items-center gap-2 group-hover:gap-3 cursor-pointer`}
                 >
                     <Icons.Link size={isRotated ? 14 : 16} className="sm:w-[18px] sm:h-[18px]" />
-                    <span>复制链接</span>
+                    <span>複製鏈接</span>
                 </button>
             )}
 
@@ -286,7 +286,7 @@ export function DesktopMoreMenu({
                         }}
                         className={`flex items-center gap-1 bg-[var(--glass-bg)] border border-[var(--glass-border)] text-[var(--text-color)] rounded-[var(--radius-2xl)] outline-none hover:border-[var(--accent-color)] hover:bg-[color-mix(in_srgb,var(--accent-color)_5%,transparent)] transition-all cursor-pointer whitespace-nowrap ${isRotated ? 'px-1.5 py-0.5 text-[9px]' : 'px-2 sm:px-2.5 py-1 sm:py-1.5 text-[10px] sm:text-xs'}`}
                     >
-                        <span>{fullscreenType === 'native' ? '系统全屏' : '网页全屏'}</span>
+                        <span>{fullscreenType === 'native' ? '系統全屏' : '網頁全屏'}</span>
                         <Icons.Maximize size={isRotated ? 10 : 12} className="text-[var(--text-color-secondary)]" />
                     </button>
                 </div>
@@ -318,7 +318,7 @@ export function DesktopMoreMenu({
             <div className="px-3 py-2 sm:px-4 sm:py-2.5 flex items-center justify-between gap-4 sm:gap-6">
                 <div className="flex items-center gap-2 sm:gap-3 text-xs sm:text-sm text-[var(--text-color)]">
                     <Icons.ShieldAlert size={16} className="sm:w-[18px] sm:h-[18px]" />
-                    <span>广告过滤</span>
+                    <span>廣告過濾</span>
                 </div>
                 {/* Custom Ad Filter Mode Selector */}
                 <div className="relative">
@@ -326,7 +326,7 @@ export function DesktopMoreMenu({
                         onClick={() => setAdFilterOpen(!isAdFilterOpen)}
                         className="flex items-center gap-1 sm:gap-1.5 bg-[var(--glass-bg)] border border-[var(--glass-border)] text-[var(--text-color)] text-[10px] sm:text-xs rounded-[var(--radius-2xl)] px-2 sm:px-2.5 py-1 sm:py-1.5 outline-none hover:border-[var(--accent-color)] hover:bg-[color-mix(in_srgb,var(--accent-color)_5%,transparent)] transition-all cursor-pointer whitespace-nowrap"
                     >
-                        <span>{AD_FILTER_LABELS[adFilterMode] || '关闭'}</span>
+                        <span>{AD_FILTER_LABELS[adFilterMode] || '關閉'}</span>
                         <Icons.ChevronDown size={12} className={`text-[var(--text-color-secondary)] transition-transform duration-300 ${isAdFilterOpen ? 'rotate-180' : ''}`} />
                     </button>
 
@@ -358,7 +358,7 @@ export function DesktopMoreMenu({
             <div className={`${isRotated ? 'px-2 py-1.5' : 'px-3 py-2 sm:px-4 sm:py-2.5'} flex items-center justify-between gap-4`}>
                 <div className={`flex items-center gap-2 text-[var(--text-color)] ${isRotated ? 'text-[11px]' : 'text-xs sm:text-sm'}`}>
                     <Icons.SkipForward size={isRotated ? 14 : 16} className="sm:w-[18px] sm:h-[18px]" />
-                    <span>自动下一集</span>
+                    <span>自動下一集</span>
                 </div>
                 <button
                     onClick={() => setAutoNextEpisode(!autoNextEpisode)}
@@ -381,7 +381,7 @@ export function DesktopMoreMenu({
                 <div className="flex items-center justify-between gap-4">
                     <div className={`flex items-center gap-2 text-[var(--text-color)] ${isRotated ? 'text-[11px]' : 'text-xs sm:text-sm'}`}>
                         <Icons.FastForward size={isRotated ? 14 : 16} className="sm:w-[18px] sm:h-[18px]" />
-                        <span>跳过片头</span>
+                        <span>跳過片頭</span>
                     </div>
                     <button
                         onClick={() => setAutoSkipIntro(!autoSkipIntro)}
@@ -401,7 +401,7 @@ export function DesktopMoreMenu({
                 {/* Expandable Input */}
                 {autoSkipIntro && (
                     <div className={`mt-2 flex items-center gap-1.5 ${isRotated ? 'ml-4' : 'ml-6 sm:ml-7'}`}>
-                        <span className={`text-[var(--text-color-secondary)] ${isRotated ? 'text-[9px]' : 'text-[10px] sm:text-xs'}`}>时长:</span>
+                        <span className={`text-[var(--text-color-secondary)] ${isRotated ? 'text-[9px]' : 'text-[10px] sm:text-xs'}`}>時長:</span>
                         <input
                             type="number"
                             min="0"
@@ -421,7 +421,7 @@ export function DesktopMoreMenu({
                 <div className="flex items-center justify-between gap-4">
                     <div className={`flex items-center gap-2 text-[var(--text-color)] ${isRotated ? 'text-[11px]' : 'text-xs sm:text-sm'}`}>
                         <Icons.Rewind size={isRotated ? 14 : 16} className="sm:w-[18px] sm:h-[18px]" />
-                        <span>跳过片尾</span>
+                        <span>跳過片尾</span>
                     </div>
                     <button
                         onClick={() => setAutoSkipOutro(!autoSkipOutro)}
@@ -441,7 +441,7 @@ export function DesktopMoreMenu({
                 {/* Expandable Input */}
                 {autoSkipOutro && (
                     <div className={`mt-2 flex items-center gap-1.5 ${isRotated ? 'ml-4' : 'ml-6 sm:ml-7'}`}>
-                        <span className={`text-[var(--text-color-secondary)] ${isRotated ? 'text-[9px]' : 'text-[10px] sm:text-xs'}`}>剩余:</span>
+                        <span className={`text-[var(--text-color-secondary)] ${isRotated ? 'text-[9px]' : 'text-[10px] sm:text-xs'}`}>剩餘:</span>
                         <input
                             type="number"
                             min="0"
@@ -466,8 +466,8 @@ export function DesktopMoreMenu({
                 onMouseEnter={onMouseEnter}
                 onMouseLeave={onMouseLeave}
                 className="group flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-black/40 hover:bg-black/60 backdrop-blur-sm transition-all duration-300 hover:scale-110 active:scale-95"
-                aria-label="更多选项"
-                title="更多选项"
+                aria-label="更多選項"
+                title="更多選項"
             >
                 <Icons.MoreHorizontal className="text-white/80 group-hover:text-white w-[20px] h-[20px] sm:w-[24px] sm:h-[24px]" />
             </button>

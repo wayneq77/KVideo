@@ -62,7 +62,7 @@ async function handleTypesRequest(sourceList: any[]) {
         // Add "Recommend" tag first
         allTags.push({
             id: 'recommend',
-            label: '今日推荐',
+            label: '今日推薦',
             value: ''
         });
 
@@ -76,7 +76,7 @@ async function handleTypesRequest(sourceList: any[]) {
 
         // Helper to clean label for comparison (remove common noise words)
         const cleanLabel = (label: string) => {
-            return label.replace(/[视频片区专]/g, '');
+            return label.replace(/[視頻片區專]/g, '');
         };
 
         // Helper to check if two labels match fuzzily (>= 4 chars overlap)

@@ -30,10 +30,10 @@ export function useUtilities({
     const handleCopyLink = useCallback(async (url?: string) => {
         try {
             await navigator.clipboard.writeText(url || src);
-            showToastNotification('链接已复制到剪贴板');
+            showToastNotification('鏈接已複製到剪貼板');
         } catch (error) {
             console.error('Copy failed:', error);
-            showToastNotification('复制失败，请重试');
+            showToastNotification('複製失敗，請重試');
         }
     }, [src, showToastNotification]);
 

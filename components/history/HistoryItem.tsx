@@ -101,7 +101,7 @@ export function HistoryItem({ item, onRemove, isPremium = false }: HistoryItemPr
                 onRemove();
               }}
               className="p-1.5 hover:bg-[var(--glass-bg)] rounded-full cursor-pointer"
-              aria-label="删除"
+              aria-label="刪除"
             >
               <Icons.Trash size={14} className="text-[var(--text-color-secondary)]" />
             </button>

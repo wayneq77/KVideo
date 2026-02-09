@@ -142,7 +142,7 @@ export function useHlsPlayer({
                             );
                             if (hasHEVC) {
                                 console.warn('[HLS] ⚠️ HEVC detected');
-                                onError?.('检测到 HEVC/H.265 编码，当前浏览器可能不支持');
+                                onError?.('檢測到 HEVC/H.265 編碼，當前瀏覽器可能不支持');
                             }
                         }
                     }
@@ -168,7 +168,7 @@ export function useHlsPlayer({
                                 if (networkErrorRetries <= MAX_RETRIES) {
                                     hls?.startLoad();
                                 } else {
-                                    onError?.('网络错误：无法加载视频流');
+                                    onError?.('網絡錯誤：無法加載視頻流');
                                     hls?.destroy();
                                 }
                                 break;
@@ -177,13 +177,13 @@ export function useHlsPlayer({
                                 if (mediaErrorRetries <= MAX_RETRIES) {
                                     hls?.recoverMediaError();
                                 } else {
-                                    onError?.('媒体错误：视频格式不支持或已损坏');
+                                    onError?.('媒體錯誤：視頻格式不支持或已損壞');
                                     hls?.destroy();
                                 }
                                 break;
                             default:
                                 console.error('[HLS] Fatal error, cannot recover:', data);
-                                onError?.(`致命错误：${data.details || '未知错误'}`);
+                                onError?.(`致命錯誤：${data.details || '未知錯誤'}`);
                                 hls?.destroy();
                                 break;
                         }
@@ -314,7 +314,7 @@ export function useHlsPlayer({
                     extraBlobs = result.allBlobs;
                 }).catch((e) => {
                     console.warn('[HLS Native] Ad filtering failed, falling back to original source.', e);
-                    onError?.('广告过滤失败，已回退到原始视频流');
+                    onError?.('廣告過濾失敗，已回退到原始視頻流');
                     video.src = src;
                 });
 
@@ -323,7 +323,7 @@ export function useHlsPlayer({
             }
         } else {
             console.error('[HLS] HLS not supported');
-            onError?.('当前浏览器不支持 HLS 视频播放');
+            onError?.('當前瀏覽器不支持 HLS 視頻播放');
         }
 
         return () => {

@@ -17,7 +17,7 @@ export function HistoryFooter({ hasHistory, onClearAll }: HistoryFooterProps) {
                 className="w-full flex items-center justify-center gap-2"
             >
                 <Icons.Trash size={18} />
-                清空历史
+                清空歷史
             </Button>
         </footer>
     );

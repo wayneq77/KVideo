@@ -67,7 +67,7 @@ function MovieGridLoading() {
     <div className="flex justify-center py-12">
       <div className="flex flex-col items-center gap-3">
         <div className="animate-spin rounded-full h-12 w-12 border-4 border-[var(--accent-color)] border-t-transparent"></div>
-        <p className="text-sm text-[var(--text-color-secondary)]">加载中...</p>
+        <p className="text-sm text-[var(--text-color-secondary)]">加載中...</p>
       </div>
     </div>
   );
@@ -76,7 +76,7 @@ function MovieGridLoading() {
 function MovieGridNoMore() {
   return (
     <div className="text-center py-12">
-      <p className="text-[var(--text-color-secondary)]">没有更多内容了</p>
+      <p className="text-[var(--text-color-secondary)]">沒有更多內容了</p>
     </div>
   );
 }
@@ -85,7 +85,7 @@ function MovieGridEmpty() {
   return (
     <div className="text-center py-20">
       <Icons.Film size={64} className="text-[var(--text-color-secondary)] mx-auto mb-4" />
-      <p className="text-[var(--text-color-secondary)]">暂无内容</p>
+      <p className="text-[var(--text-color-secondary)]">暫無內容</p>
     </div>
   );
 }

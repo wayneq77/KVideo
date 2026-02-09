@@ -27,21 +27,21 @@ export function DisplaySettings({
 }: DisplaySettingsProps) {
     return (
         <div className="bg-[var(--glass-bg)] border border-[var(--glass-border)] rounded-[var(--radius-2xl)] shadow-[var(--shadow-sm)] p-6 mb-6">
-            <h2 className="text-xl font-semibold text-[var(--text-color)] mb-4">显示设置</h2>
+            <h2 className="text-xl font-semibold text-[var(--text-color)] mb-4">顯示設置</h2>
 
             {/* Remember Scroll Position Toggle */}
             <div className="mb-6">
                 <div className="flex items-center justify-between">
                     <div>
-                        <h3 className="font-medium text-[var(--text-color)]">记住滚动位置</h3>
+                        <h3 className="font-medium text-[var(--text-color)]">記住滾動位置</h3>
                         <p className="text-sm text-[var(--text-color-secondary)] mt-1">
-                            退出或刷新页面后，自动恢复到之前的滚动位置
+                            退出或刷新頁面後，自動恢復到之前的滾動位置
                         </p>
                     </div>
                     <Switch
                         checked={rememberScrollPosition}
                         onChange={onRememberScrollPositionChange}
-                        ariaLabel="记住滚动位置开关"
+                        ariaLabel="記住滾動位置開關"
                     />
                 </div>
             </div>
@@ -50,24 +50,24 @@ export function DisplaySettings({
             <div className="mb-6">
                 <div className="flex items-center justify-between">
                     <div>
-                        <h3 className="font-medium text-[var(--text-color)]">实时延迟显示</h3>
+                        <h3 className="font-medium text-[var(--text-color)]">實時延遲顯示</h3>
                         <p className="text-sm text-[var(--text-color-secondary)] mt-1">
-                            开启后，搜索结果中的延迟数值会每 5 秒更新一次
+                            開啓後，搜索結果中的延遲數值會每 5 秒更新一次
                         </p>
                     </div>
                     <Switch
                         checked={realtimeLatency}
                         onChange={onRealtimeLatencyChange}
-                        ariaLabel="实时延迟显示开关"
+                        ariaLabel="實時延遲顯示開關"
                     />
                 </div>
             </div>
 
             {/* Search Display Mode */}
             <div>
-                <h3 className="font-medium text-[var(--text-color)] mb-2">搜索结果显示方式</h3>
+                <h3 className="font-medium text-[var(--text-color)] mb-2">搜索結果顯示方式</h3>
                 <p className="text-sm text-[var(--text-color-secondary)] mb-4">
-                    选择搜索结果的展示模式
+                    選擇搜索結果的展示模式
                 </p>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                     <button
@@ -77,8 +77,8 @@ export function DisplaySettings({
                             : 'bg-[var(--glass-bg)] border-[var(--glass-border)] text-[var(--text-color)] hover:bg-[color-mix(in_srgb,var(--accent-color)_10%,transparent)]'
                             }`}
                     >
-                        <div className="font-semibold">默认显示</div>
-                        <div className="text-sm opacity-80 mt-1">每个源的结果单独显示</div>
+                        <div className="font-semibold">默認顯示</div>
+                        <div className="text-sm opacity-80 mt-1">每個源的結果單獨顯示</div>
                     </button>
                     <button
                         onClick={() => onSearchDisplayModeChange('grouped')}
@@ -87,8 +87,8 @@ export function DisplaySettings({
                             : 'bg-[var(--glass-bg)] border-[var(--glass-border)] text-[var(--text-color)] hover:bg-[color-mix(in_srgb,var(--accent-color)_10%,transparent)]'
                             }`}
                     >
-                        <div className="font-semibold">合并同名源</div>
-                        <div className="text-sm opacity-80 mt-1">相同名称的视频合并为一个卡片</div>
+                        <div className="font-semibold">合併同名源</div>
+                        <div className="text-sm opacity-80 mt-1">相同名稱的視頻合併爲一個卡片</div>
                     </button>
                 </div>
             </div>

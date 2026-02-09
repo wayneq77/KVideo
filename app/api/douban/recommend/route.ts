@@ -4,7 +4,7 @@ export const runtime = 'edge';
 
 export async function GET(request: Request) {
   const { searchParams } = new URL(request.url);
-  const tag = searchParams.get('tag') || '热门';
+  const tag = searchParams.get('tag') || '熱門';
   const pageLimit = searchParams.get('page_limit') || '20';
   const pageStart = searchParams.get('page_start') || '0';
   const type = searchParams.get('type') || 'movie'; // movie or tv
@@ -26,7 +26,7 @@ export async function GET(request: Request) {
 
     const data = await response.json();
 
-    // 转换图片链接使用代理
+    // 轉換圖片鏈接使用代理
     if (data.subjects && Array.isArray(data.subjects)) {
       data.subjects = data.subjects.map((item: any) => ({
         ...item,

@@ -48,8 +48,8 @@ export function BackToTop() {
                     ? 'opacity-100 translate-y-0 scale-100'
                     : 'opacity-0 translate-y-10 scale-50 pointer-events-none'
                 }`}
-            aria-label="返回顶部"
-            title="返回顶部"
+            aria-label="返回頂部"
+            title="返回頂部"
         >
             <ChevronUp size={24} strokeWidth={2.5} />
         </button>

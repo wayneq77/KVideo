@@ -22,7 +22,7 @@ export function usePopularMovies(selectedTag: string, tags: any[], contentType: 
 
         setLoading(true);
         try {
-            const tagValue = tags.find(t => t.id === tag)?.value || '热门';
+            const tagValue = tags.find(t => t.id === tag)?.value || '熱門';
             const response = await fetch(
                 `/api/douban/recommend?type=${contentType}&tag=${encodeURIComponent(tagValue)}&page_limit=${PAGE_LIMIT}&page_start=${pageStart}`
             );

@@ -22,7 +22,7 @@ export function ConfirmDialog({
   message,
   onConfirm,
   onCancel,
-  confirmText = '确认',
+  confirmText = '確認',
   cancelText = '取消',
   variant = 'warning',
   dangerous = false,

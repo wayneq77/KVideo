@@ -230,7 +230,7 @@ export function useSettingsPage() {
             return true;
         } catch (e) {
             console.error(e);
-            throw new Error('无法连接到订阅链接或格式错误');
+            throw new Error('無法連接到訂閱鏈接或格式錯誤');
         }
     };
 

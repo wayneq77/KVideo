@@ -12,7 +12,7 @@ export function SettingsHeader() {
                 <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                     <path d="M19 12H5M12 19l-7-7 7-7" />
                 </svg>
-                返回上一页
+                返回上一頁
             </button>
             <div className="flex items-center gap-4">
                 <div className="w-12 h-12 flex items-center justify-center rounded-[var(--radius-2xl)] bg-[var(--glass-bg)] border border-[var(--glass-border)]">
@@ -21,8 +21,8 @@ export function SettingsHeader() {
                     </svg>
                 </div>
                 <div>
-                    <h1 className="text-3xl font-bold text-[var(--text-color)]">设置</h1>
-                    <p className="text-[var(--text-color-secondary)]">管理应用程序配置</p>
+                    <h1 className="text-3xl font-bold text-[var(--text-color)]">設置</h1>
+                    <p className="text-[var(--text-color-secondary)]">管理應用程序配置</p>
                 </div>
             </div>
         </div>

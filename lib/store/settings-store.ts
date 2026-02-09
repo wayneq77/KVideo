@@ -36,7 +36,7 @@ export interface AppSettings {
   skipIntroSeconds: number;
   autoSkipOutro: boolean;
   skipOutroSeconds: number;
-  showModeIndicator: boolean; // Show '直连模式'/'代理模式' badge on player
+  showModeIndicator: boolean; // Show '直連模式'/'代理模式' badge on player
   adFilter: boolean; // Filter ad tags from m3u8 (legacy, kept for compatibility)
   adFilterMode: AdFilterMode; // 'off' | 'keyword' | 'heuristic' | 'aggressive'
   adKeywords: string[]; // Dynamically loaded ad keywords
@@ -83,8 +83,8 @@ function getEnvSubscriptions(customValue?: string): SourceSubscription[] {
       if (!url.startsWith('http')) return null;
 
       const name = urls.length > 1
-        ? `系统预设源 ${index + 1}`
-        : `系统预设源`;
+        ? `系統預設源 ${index + 1}`
+        : `系統預設源`;
 
       return createSubscription(name, url);
     }).filter((s): s is SourceSubscription => s !== null);
